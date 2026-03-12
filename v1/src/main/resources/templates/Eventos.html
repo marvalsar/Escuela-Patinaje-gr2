@@ -1,0 +1,106 @@
+<html>
+    <html xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <title>Escuela de Patinaje</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-info p-3">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img th:src="@{/images/logo.png}" alt="Logo Escuela de Patinaje" width="150" height="50" class="d-inline-block align-top">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" th:href="@{/index}">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Escuela</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Valores Corporativos
+            </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" th:href="@{/mision}">Misión</a></li>
+            <li><a class="dropdown-item" th:href="@{/vision}">Visión</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" th:href="@{/historia}">Historia</a></li>
+            <li><a class="dropdown-item" th:href="@{/valores}">Valores</a></li>
+            <li><a class="dropdown-item" th:href="@{/servicios}">Servicios</a></li>
+            <li><a class="dropdown-item" th:href="@{/eventos}">Eventos</a></li>
+        </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+        </ul>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+    </div>
+    </div>
+</nav>
+
+<style>
+            .seccion-vision {
+                text-align: justify;
+                line-height: 1.8;
+                max-width: 800px;
+            }
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-10 ms-5 ps-4 seccion-vision">
+            <h1 class="display-5 fw-bold mb-5">Nuestros Eventos</h1>
+            <p><b>1. Eventos Competitivos y Deportivos</b></p>
+            <p>Estos eventos buscan cumplir tu misión de desarrollar el máximo potencial técnico de los patinadores:</p>
+            <p><b>I Festival de Iniciación "Nuevos Talentos" (Abril 2026):</b> Competencia recreativa para alumnos de los 
+                niveles semilleros e iniciación, enfocada en superar obstáculos básicos y equilibrio.</p>
+            <p><b>Copa Interclubes de Hockey sobre Patines (Mayo 2026):</b> Torneo relámpago aprovechando el enfoque de la
+            escuela en Hockey Línea y Tradicional.</p>
+            <p><b>Maratón Nocturna "Patinando por la Ciudad" (Julio 2026):</b> Evento de patinaje de velocidad (Carreras) en 
+                un circuito cerrado para fomentar la resistencia y la técnica de competencia.</p>
+            <p class="mb-5"><b>Gala Anual de Patinaje Artístico (Noviembre 2026):</b> Presentación final de año con coreografías
+            y vestuarios, donde se evalúa la elegancia y técnica aprendida.</p>
+            <p ><b>2. Talleres y Formación Integral</b></p>
+            <p>Como desarrollador, puedes crear una sección para inscripciones a estos talleres técnicos:</p>
+            <p><b>Clínica de Mantenimiento de Equipos:</b> Taller práctico para que los alumnos aprendan a rotar sus ruedas y 
+            limpiar los rodamientos de sus patines.</p>
+            <p><b>Seminario de Nutrición para Deportistas:</b> Charla dirigida a padres y alumnos sobre la alimentación ideal 
+            para mejorar el rendimiento y la recuperación física.</p>
+            <p class="mb-5"><b>Taller de Psicología Deportiva:</b> Sesión enfocada en el manejo de la frustración y el 
+            fortalecimiento de la disciplina y perseverancia mencionada en tu misión.</p>
+            <p><b>3. Actividades Recreativas y Sociales</b></p>
+            <p>Eventos diseñados para crear el "ambiente seguro y divertido" que promueve la institución:</p>
+            <p><b>Vacaciones Recreativas "Sobre Ruedas" (Junio - Julio 2026):</b> Campamento de una semana con juegos, cine al
+            aire libre y salidas a parques de patinaje.</p>
+            <p><b>Día de la Familia y el Patín:</b> Jornada de integración donde los padres pueden patinar con sus hijos y 
+            participar en rifas y concursos.</p>
+            <p class="mb-5"><b>Celebración de Aniversario de la Escuela:</b> Fiesta conmemorativa con exhibiciones de los 
+            mejores patinadores y entrega de reconocimientos por antigüedad.</p>
+        </div>
+    </div>
+</div>
+            
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
+        </div>
+    </div>
+</div>
+            
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

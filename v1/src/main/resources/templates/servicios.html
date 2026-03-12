@@ -1,0 +1,103 @@
+<html>
+    <html xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <title>Escuela de Patinaje</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-info p-3">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img th:src="@{/images/logo.png}" alt="Logo Escuela de Patinaje" width="150" height="50" class="d-inline-block align-top">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" th:href="@{/index}">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Escuela</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Valores Corporativos
+            </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" th:href="@{/mision}">Misión</a></li>
+            <li><a class="dropdown-item" th:href="@{/vision}">Visión</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" th:href="@{/historia}">Historia</a></li>
+            <li><a class="dropdown-item" th:href="@{/valores}">Valores</a></li>
+            <li><a class="dropdown-item" th:href="@{/servicios}">Servicios</a></li>
+            <li><a class="dropdown-item" th:href="@{/eventos}">Eventos</a></li>
+        </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+        </ul>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+    </div>
+    </div>
+</nav>
+
+<style>
+            .seccion-vision {
+                text-align: justify;
+                line-height: 1.8;
+                max-width: 800px;
+            }
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-10 ms-5 ps-4 seccion-vision">
+            <h1 class="display-5 fw-bold mb-5">Nuestros Servicios</h1>
+             <p><b>1. Programas de Formación (Core)</b></p> 
+            <p>Estos son los servicios principales divididos por niveles de experiencia:</p>
+            <p><b>Iniciación al Patinaje (Semilleros):</b> Clases para niños y adultos que nunca han patinado, 
+              enfocadas en el equilibrio, frenado y seguridad.</p>
+            <p><b>Nivel Intermedio:</b> Perfeccionamiento de la técnica, giros, desplazamientos hacia atrás 
+              y saltos básicos.</p>
+            <p><b>Patinaje de Velocidad (Carreras):</b> Entrenamiento enfocado en la resistencia, potencia 
+              y técnica de competencia en pista.</p>
+            <p class="mb-5"><b>Patinaje Artístico:</b> Formación en figuras, saltos, giros y coreografías con acompañamiento musical.</p>
+            <p ><b>2. Modalidades de Hockey</b></p>
+            <p> </p>Como mencionaste en la visión de la escuela, el Hockey es un pilar importante:</p>
+            <p><b>Hockey sobre Patín (Tradicional):</b> Entrenamiento técnico y táctico para esta modalidad clásica.</p>
+            <p><b>Hockey Línea:</b> Clases enfocadas en la agilidad y el manejo del stick en patines en línea.</p>
+            <p class="mb-5"><b>Torneos Internos:</b> Organización de cuadrangulares y ligas cortas para fomentar la competencia sana.</p>
+            <p><b>3. Servicios Complementarios</b></p>
+            <p>Servicios extra que aportan valor a los padres y alumnos:</p>
+            <p><b>Acondicionamiento Físico:</b> Sesiones "fuera de patines" para mejorar la fuerza, flexibilidad y evitar lesiones.</p>
+            <p><b>Alquiler de Equipo:</b> Préstamo de patines, cascos y protecciones para los alumnos de nivel iniciación.</p>
+            <p class="mb-5"><b>Vacaciones Recreativas:</b> Campamentos intensivos de patinaje durante el receso escolar con actividades lúdicas.</p>
+            <p><b>4. Eventos y Servicios Corporativos</b></p>
+            <p><b>Cumpleaños sobre Ruedas:</b> Organización de fiestas infantiles con animadores y juegos en patines.</p>
+            <p><b>Clases Personalizadas:</b> Entrenamiento 1 a 1 para objetivos específicos (ej. perder peso o preparar una competencia).</p>
+            <p><b>Talleres de Mantenimiento:</b> Charlas para aprender a limpiar rodamientos y rotar las ruedas de los patines.</p> 
+        </div>
+    </div>
+</div>
+            
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
+        </div>
+    </div>
+</div>
+            
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

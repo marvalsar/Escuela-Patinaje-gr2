@@ -7,26 +7,26 @@
 <body>
 
     <nav class="navbar navbar-expand-lg bg-info p-3">
-  <div class="container-fluid">
+    <div class="container-fluid">
     <a class="navbar-brand" href="#">
         <img th:src="@{/images/logo.png}" alt="Logo Escuela de Patinaje" width="150" height="50" class="d-inline-block align-top">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" th:href="@{/index}">Inicio</a>
+            <a class="nav-link active" aria-current="page" th:href="@{/index}">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Escuela</a>
+            <a class="nav-link" href="#">Escuela</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Valores Corporativos
-          </a>
-          <ul class="dropdown-menu">
+            </a>
+        <ul class="dropdown-menu">
             <li><a class="dropdown-item" th:href="@{/mision}">Misión</a></li>
             <li><a class="dropdown-item" th:href="@{/vision}">Visión</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -34,46 +34,52 @@
             <li><a class="dropdown-item" th:href="@{/valores}">Valores</a></li>
             <li><a class="dropdown-item" th:href="@{/servicios}">Servicios</a></li>
             <li><a class="dropdown-item" th:href="@{/eventos}">Eventos</a></li>
-          </ul>
+        </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>
-      <form class="d-flex" role="search">
+        </ul>
+        <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+        </form>
     </div>
-  </div>
+    </div>
 </nav>
 
 <style>
-            .seccion-mision {
-                text-align: justify; 
-                line-height: 1.8;    
-                max-width: 800px;    
+            .seccion-vision {
+                text-align: justify;
+                line-height: 1.8;
+                max-width: 800px;
             }
 </style>
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-12 col-md-10 ms-5 ps-4 seccion-mision">
-            <h1 class="display-5 fw-bold mb-4">Nuestra Misión</h1>
-            <p>
-                La misión de nuestra Escuela de Patinaje es fomentar la práctica del deporte 
-                desde una edad temprana, promoviendo valores de disciplina, perseverancia 
-                y trabajo en equipo. Buscamos que cada patinador desarrolle su máximo potencial 
-                técnico mientras disfruta de un ambiente seguro, divertido y profesional.
-            </p>
-            <p>
-                Nos comprometemos a formar no solo deportistas de alto rendimiento, sino también 
-                personas integras que encuentren en el patinaje una pasión para toda la vida.
-            </p>
+        <div class="col-12 col-md-10 ms-5 ps-4 seccion-vision">
+            <h1 class="display-5 fw-bold mb-5">Nuestros Valores</h1>
+            <p><b>Respeto:</b> Valorar la dignidad, derechos y diversidad de las personas.</p>
+            <p><b>Honestidad:</b> Actuar con transparencia, sinceridad y rectitud.</p>
+            <p><b>Responsabilidad:</b> Cumplir con las obligaciones y asumir las consecuencias de las decisiones.</p>
+            <p><b>Justicia:</b> Imparcialidad y equidad en el trato y la toma de decisiones.</p>
+            <p><b>Compromiso:</b> Sentido de pertenencia y dedicación para lograr los objetivos de la institución.</p>
+            <p><b>Solidaridad:</b> Apoyo mutuo y empatía entre los miembros de la comunidad.</p>
+            <p><b>Integridad:</b> Coherencia entre los valores, principios y acciones.</p>
         </div>
     </div>
 </div>
+            
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+    
+</body>
+</html>
+        </div>
+    </div>
+</div>
+            
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     
